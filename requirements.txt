@@ -1,0 +1,6 @@
+flask
+pandas
+line-bot-sdk
+gspread
+oauth2client
+paypalrestsdk

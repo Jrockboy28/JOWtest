@@ -1,0 +1,193 @@
+{% extends "./layer1/base_layout2.html" %}
+{% block body %}
+<main class="main-content">
+  <!--== Start Page Header Area Wrapper ==-->
+  <div class="page-header-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="page-header-content">
+            <h2 class="title" data-aos="fade-down" data-aos-duration="1000">Kunsthaus Identity</h2>
+            <nav class="breadcrumb-area" data-aos="fade-down" data-aos-duration="1200">
+              <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li class="breadcrumb-sep">></li>
+                <li><a href="index.html">Portfolio List</a></li>
+                <li class="breadcrumb-sep">></li>
+                <li>Kunsthaus Identity</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--== End Page Header Area Wrapper ==-->
+
+  <!--== Start Service Details Area Wrapper ==-->
+  <section class="portfolio-area project-details-area">
+    <div class="container pb--0">
+      <div class="row">
+        <div class="col-12">
+          <div class="projecet-details-colunm-style2">
+            <div class="row">
+              <div class="col-12">
+                <div class="swiper-container projecet-details-thumb-slider">
+                  <div class=" swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img  src="{{ url_for('static', filename='img/portfolio/details/a-sl1.jpg') }}" alt="Image-HasTech">
+                        <a class="image-popup" data-fancybox="gallery" data-caption="pfs-4" href="{{ url_for('static', filename='img/portfolio/details/a-sl1.jpg') }}"></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img  src="{{ url_for('static', filename='img/portfolio/details/a-sl2.jpg') }}" alt="Image-HasTech">
+                        <a class="image-popup" data-fancybox="gallery" data-caption="pfs-3" href="{{ url_for('static', filename='img/portfolio/details/a-sl2.jpg') }}"></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img  src="{{ url_for('static', filename='img/portfolio/details/a-sl3.jpg') }}" alt="Image-HasTech">
+                        <a class="image-popup" data-fancybox="gallery" data-caption="pfs-2" href="{{ url_for('static', filename='img/portfolio/details/a-sl3.jpg') }}"></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img  src="{{ url_for('static', filename='img/portfolio/details/a-sl4.jpg') }}" alt="Image-HasTech">
+                        <a class="image-popup" data-fancybox="gallery" data-caption="pfs-1" href="{{ url_for('static', filename='img/portfolio/details/a-sl4.jpg') }}"></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--== Add Swiper Arrows ==-->
+                  <div class="swiper-button-next"><i class="fa fa-angle-right"></i></div>
+                  <div class="swiper-button-prev"><i class="fa fa-angle-left"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="projecet-details-content">
+              <div class="contents">
+                <div class="col-6">
+                  <div class="content">
+                    <h4 class="sub-title">Watercolor/Loose Florals</h4>
+                    <h3 class="title">Basic Brushstrokes workshop</h3>
+                    <p>In the workshop you will learn 8 Strokes and 7 ways to use brushes and complete a flower painting.</p>
+                    <p>Quisque quis lectus ullamcorper, facilisis neque a, feugiat purus. Mauris ac leo dignissim, interdum enim at, consectetur est. Fusce quis suscipit felis.</p>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="content">
+                    <div class="projecet-info">
+                      <div class="item">
+                        <h4 class="title">Client</h4>
+                        <p>Envato Themeforest</p>
+                      </div>
+                      <div class="item">
+                        <h4 class="title">Date</h4>
+                        <p>06-14-2023</p>
+                      </div>
+                      <div class="item">
+                        <h4 class="title">Designer</h4>
+                        <p>Leanna Weber Art & Rumei Pure Beauty</p>
+                      </div>
+                      <div class="item">
+                        <h4 class="title">Share</h4>
+                        <div class="social-icons">
+                          <a href="#/"><i class="lastudioicon-b-facebook"></i></a>
+                          <a href="#/"><i class="lastudioicon-b-twitter"></i></a>
+                          <a href="#/"><i class="lastudioicon-b-linkedin"></i></a>
+                          <a href="#/"><i class="lastudioicon-b-pinterest"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="portfolio-nav">
+            <div class="nl">
+              <!-- <a href="portfolio-single.html"><i class="lastudioicon-left-arrow"></i><span>Prev</span></a> -->
+            </div>
+            <div class="nm">
+              <a href="portfolio.html"><i class="lastudioicon-microsoft"></i></a>
+            </div>
+            <div class="nr">
+              <!-- <a href="portfolio-single-three.html"><span>Next</span><i class="lastudioicon-right-arrow"></i></a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--== End Service Details Area Wrapper ==-->
+
+  <div class="container pt--0 pb--0">
+    <div class="row">
+      <div class="col-12">
+        <div class="divider-line-wrap"></div>
+      </div>
+    </div>
+  </div>
+
+  <!--== Start Contact Area Wrapper ==-->
+  <section class="contact-area">
+    <div class="container pt--0">
+      <div class="row divider-style6-wrap">
+        <div class="col-lg-5">
+          <div class="divider-content">
+            <div class="section-title section-title-style4 mb--0" data-aos="fade-up" data-aos-offset="50">
+              <h2 class="title">Let’s Collaborate</h2>
+              <div class="desc mb--0">
+                <p>Proin feugiat pharetra nisi in viverra. Pellentesque habitant morbi tristique senectus et netus</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="contact-form-wrap"> 
+            <!--== Start Contact Form ==-->
+            <div class="contact-form" data-aos="fade-up" data-aos-delay="50" data-aos-offset="60">
+
+
+              <form id="contact-form" action="" enctype="multipart/form-data" method="POST">
+              <!-- <form id="contact-form" action="php/mail.php" method="post"> -->
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group">
+                      <input class="form-control" type="text" name="name" placeholder="Name*" required>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <input class="form-control" type="email" name="email" placeholder="Your email*" required>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group mb--0">
+                      <textarea class="form-control" name="activity" placeholder="Activities"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group mb--0">
+                      <button class="btn-contact" type="submit">Atten Activities</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!--== End Contact Form ==-->
+            <div class="form-message"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--== End Contact Area Wrapper ==-->
+</main>
+{% endblock %}

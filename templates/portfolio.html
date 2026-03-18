@@ -1,0 +1,192 @@
+{% extends "./layer1/base_layout2.html" %}
+{% block body %}
+  <main class="main-content">
+    <!--== Start Page Header Area Wrapper ==-->
+    <div class="page-header-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="page-header-content">
+              <h2 class="title" data-aos="fade-down" data-aos-duration="1000">Portfolio Hover</h2>
+              <nav class="breadcrumb-area" data-aos="fade-down" data-aos-duration="1200">
+                <ul class="breadcrumb">
+                  <li><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-sep">></li>
+                  <li><a href="index.html">Portfolio List</a></li>
+                  <li class="breadcrumb-sep">></li>
+                  <li>Portfolio Hover</li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--== End Page Header Area Wrapper ==-->
+
+    <!--== Start Portfolios Area Wrapper ==-->
+    <section class="portfolio-area portfolio-masonry-area portfolio-inner-area">
+      <div class="container pb--0 portfolio-filter-container">
+        <div class="row">
+          <div class="col-12">
+            <ul class="portfolio-filter-menu style2">
+              <li class="active" data-filter="*">All</li>
+              <li data-filter=".digital-arts">Digital Arts</li>
+              <li data-filter=".graphic-design">Graphic Design</li>
+              <li data-filter=".illustrations">Illustrations</li>
+              <li data-filter=".photography">Photography</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container pt--0">
+        <div class="row row-cols-xl-3 row-cols-md-2 row-cols-sm-1 row-cols-xs-1 portfolio-filter-content row-gutter-30">
+          <div class="col graphic-design">
+            <!--== Start Portfolio Item ==-->
+            <div class="portfolio-item">
+              <div class="inner-content portfolio-hover-style5">
+                <div class="portfolio-thumb">
+                  <a href="portfolio-single.html"><img src="{{ url_for('static', filename='img/portfolio/hover/1.jpg') }}" alt="Image-HasTech"></a>
+                </div>
+                <div class="portfolio-info">
+                  <p class="category">Graphic Design</p>
+                  <h3 class="title"><a href="portfolio-single.html">Tremblant In Canada</a></h3>
+                </div>
+              </div>
+            </div>
+            <!--== End Portfolio Item ==-->
+          </div>
+          <div class="col digital-arts">
+            <!--== Start Portfolio Item ==-->
+            <div class="portfolio-item">
+              <div class="inner-content portfolio-hover-style5">
+                <div class="portfolio-thumb">
+                  <a href="portfolio-single.html"><img src="{{ url_for('static', filename='img/portfolio/hover/2.jpg') }}" alt="Image-HasTech"></a>
+                </div>
+                <div class="portfolio-info">
+                  <p class="category">Digital Arts</p>
+                  <h3 class="title"><a href="portfolio-single.html">The Flash Tutorial</a></h3>
+                </div>
+              </div>
+            </div>
+            <!--== End Portfolio Item ==-->
+          </div>
+          <div class="col digital-arts">
+            <!--== Start Portfolio Item ==-->
+            <div class="portfolio-item">
+              <div class="inner-content portfolio-hover-style5">
+                <div class="portfolio-thumb">
+                  <a href="portfolio-single.html"><img src="{{ url_for('static', filename='img/portfolio/hover/3.jpg') }}" alt="Image-HasTech"></a>
+                </div>
+                <div class="portfolio-info">
+                  <p class="category">Digital Arts</p>
+                  <h3 class="title"><a href="portfolio-single.html">Astronomy Or Astrology</a></h3>
+                </div>
+              </div>
+            </div>
+            <!--== End Portfolio Item ==-->
+          </div>
+          <div class="col illustrations">
+            <!--== Start Portfolio Item ==-->
+            <div class="portfolio-item">
+              <div class="inner-content portfolio-hover-style5">
+                <div class="portfolio-thumb">
+                  <a href="portfolio-single.html"><img src="{{ url_for('static', filename='img/portfolio/hover/4.jpg') }}" alt="Image-HasTech"></a>
+                </div>
+                <div class="portfolio-info">
+                  <p class="category">Illustrations</p>
+                  <h3 class="title"><a href="portfolio-single.html">Are You Struggling In Life</a></h3>
+                </div>
+              </div>
+            </div>
+            <!--== End Portfolio Item ==-->
+          </div>
+          <div class="col photography">
+            <!--== Start Portfolio Item ==-->
+            <div class="portfolio-item">
+              <div class="inner-content portfolio-hover-style5">
+                <div class="portfolio-thumb">
+                  <a href="portfolio-single.html"><img src="{{ url_for('static', filename='img/portfolio/hover/5.jpg') }}" alt="Image-HasTech"></a>
+                </div>
+                <div class="portfolio-info">
+                  <p class="category">Photography</p>
+                  <h3 class="title"><a href="portfolio-single.html">Fons Hickmann</a></h3>
+                </div>
+              </div>
+            </div>
+            <!--== End Portfolio Item ==-->
+          </div>
+          <div class="col photography">
+            <!--== Start Portfolio Item ==-->
+            <div class="portfolio-item">
+              <div class="inner-content portfolio-hover-style5">
+                <div class="portfolio-thumb">
+                  <a href="portfolio-single.html"><img src="{{ url_for('static', filename='img/portfolio/hover/6.jpg') }}" alt="Image-HasTech"></a>
+                </div>
+                <div class="portfolio-info">
+                  <p class="category">Photography</p>
+                  <h3 class="title"><a href="portfolio-single.html">Mitchell Rouse</a></h3>
+                </div>
+              </div>
+            </div>
+            <!--== End Portfolio Item ==-->
+          </div>
+          <div class="col photography">
+            <!--== Start Portfolio Item ==-->
+            <div class="portfolio-item">
+              <div class="inner-content portfolio-hover-style5">
+                <div class="portfolio-thumb">
+                  <a href="portfolio-single.html"><img src="{{ url_for('static', filename='img/portfolio/hover/7.jpg') }}" alt="Image-HasTech"></a>
+                </div>
+                <div class="portfolio-info">
+                  <p class="category">Photography</p>
+                  <h3 class="title"><a href="portfolio-single.html">Maxime Truchon</a></h3>
+                </div>
+              </div>
+            </div>
+            <!--== End Portfolio Item ==-->
+          </div>
+          <div class="col photography">
+            <!--== Start Portfolio Item ==-->
+            <div class="portfolio-item">
+              <div class="inner-content portfolio-hover-style5">
+                <div class="portfolio-thumb">
+                  <a href="portfolio-single.html"><img src="{{ url_for('static', filename='img/portfolio/hover/8.jpg') }}" alt="Image-HasTech"></a>
+                </div>
+                <div class="portfolio-info">
+                  <p class="category">Marketing, Photography</p>
+                  <h3 class="title"><a href="portfolio-single.html">Understanding Colors</a></h3>
+                </div>
+              </div>
+            </div>
+            <!--== End Portfolio Item ==-->
+          </div>
+          <div class="col photography">
+            <!--== Start Portfolio Item ==-->
+            <div class="portfolio-item">
+              <div class="inner-content portfolio-hover-style5">
+                <div class="portfolio-thumb">
+                  <a href="portfolio-single.html"><img src="{{ url_for('static', filename='img/portfolio/hover/9.jpg') }}" alt="Image-HasTech"></a>
+                </div>
+                <div class="portfolio-info">
+                  <p class="category">Marketing, Photography</p>
+                  <h3 class="title"><a href="portfolio-single.html">The Coffee Bar</a></h3>
+                </div>
+              </div>
+            </div>
+            <!--== End Portfolio Item ==-->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="portfolio-loadmore style3 mb--0">
+              <a href="javascript:;"><span>Load More</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--== End Portfolios Area Wrapper ==-->
+  </main>
+
+{% endblock %}

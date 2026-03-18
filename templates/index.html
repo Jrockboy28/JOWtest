@@ -1,0 +1,620 @@
+{% extends "./layer1/base_layout3.html" %}
+{% block body %}
+<main class="main-content">
+  <!--== Start Hero Area Wrapper ==-->
+  <section class="home-slider-area">
+    <div class="swiper-container home-slider-container default-slider-container">
+      <div class="swiper-wrapper home-slider-wrapper slider-default">
+        <div class="swiper-slide">
+          <div class="slider-content-area" data-bg-img="{{ url_for('static', filename='img/slider/slider-01.jpg') }}">
+            <div class="container p--0">
+              <div class="row align-items-center">
+                <div class="col-12">
+                  <div class="slider-content">
+                    <h2 class="title">Crafting Stories <br>for Life</h2>
+                    <p class="desc">Morbi felis velit, cursus eu nibh nec, elementum <br>dapibus risus. Praesent iaculis nunc a nisl gravida,</p>
+                    <a class="btn-slider" href="portfolio-single-01.html">Discover now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-content-area" data-bg-img="{{ url_for('static', filename='img/slider/slider-02.jpg') }}">
+            <div class="container p--0">
+              <div class="row align-items-center">
+                <div class="col-12">
+                  <div class="slider-content">
+                    <h2 class="title">Bringing Joy <br>through Reel</h2>
+                    <p class="desc">Morbi felis velit, cursus eu nibh nec, elementum <br>dapibus risus. Praesent iaculis nunc a nisl gravida,</p>
+                    <a class="btn-slider" href="portfolio-single-02.html">Discover now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-content-area" data-bg-img="{{ url_for('static', filename='img/slider/slider-03.jpg') }}">
+            <div class="container p--0">
+              <div class="row align-items-center">
+                <div class="col-12">
+                  <div class="slider-content">
+                    <h2 class="title">Film is our <br>Passion</h2>
+                    <p class="desc">Morbi felis velit, cursus eu nibh nec, elementum <br>dapibus risus. Praesent iaculis nunc a nisl gravida,</p>
+                    <a class="btn-slider" href="portfolio-single-03.html">Discover now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--== Add Swiper Arrows ==-->
+      <div class="swiper-button-next"><i class="fa fa-angle-right"></i></div>
+      <div class="swiper-button-prev"><i class="fa fa-angle-left"></i></div>
+
+      <!--== Add Swiper Pagination ==-->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <!--== End Hero Area Wrapper ==-->
+
+  <!--== Start About Area Wrapper ==-->
+  <section class="about-area about-default-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title section-title-column-style mb--0">
+            <div class="column-left">
+              <h2 class="title mb--0" data-aos="fade-up" data-aos-offset="50">Making dreams come to life</h2>
+            </div>
+            <div class="column-right">
+              <div class="desc mb--0" data-aos="fade-up" data-aos-delay="50" data-aos-offset="80">
+                <p>Vivamus molestie arcu enim, ac varius justo commodo ut. Suspendisse non semper augue. Donec lobortis tempor risus, id aliquam neque rhoncus nec.Proin finibus tincidunt faucibus. Nulla arcu magna, fermentum…</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="about-style-wrap">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="about-content mt--0" data-aos="fade-up" data-aos-offset="50">
+                  <div class="inner-content">
+                    <h4 class="title">About Us</h4>
+                    <p>Maecenas at velit eget turpis hendrerit rutrum eget sed magna. Donec tincidunt volutpat metus, ut mollis dui bibendum sit amet. Sed id magna sit amet enim interdum pellentesque</p>
+                    <a class="btn-link" href="about.html">read more <i class="lastudio-services__button-icon lastudioicon-right-arrow icon"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-content justify-content-end" data-aos="fade-up" data-aos-delay="50">
+                  <div class="inner-content">
+                    <h4 class="title">Our Vision</h4>
+                    <p>Maecenas at velit eget turpis hendrerit rutrum eget sed magna. Donec tincidunt volutpat metus, ut mollis dui bibendum sit amet. Sed id magna sit amet enim interdum pellentesque</p>
+                    <a class="btn-link" href="about.html">read more <i class="lastudio-services__button-icon lastudioicon-right-arrow icon"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--== End About Area Wrapper ==-->
+
+  <!--== Start Portfolios Area Wrapper ==-->
+  <section class="portfolio-area portfolio-default-area">
+    <div class="container">
+      <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-xs-1 masonry-grid no-gutter" data-aos="fade-up" data-aos-offset="50">
+        <div class="col">
+          <!--== Start Portfolio Item ==-->
+          <div class="portfolio-item">
+            <div class="inner-content portfolio-hover-style">
+              <div class="portfolio-thumb">
+                <a href="portfolio-single.html"><img  src="{{ url_for('static', filename='img/portfolio/01.jpg') }}" alt="Image-HasTech"></a>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-info-icon">
+                  <a class="item image-popup" data-fancybox="gallery" data-caption="Tremblant In Canada" href="{{ url_for('static', filename='img/portfolio/01.jpg') }}"><i class="lastudioicon-search-zoom-in"></i></a>
+                  <a class="item" href="portfolio-single.html"><i class="lastudioicon-web-link"></i></a>
+                </div>
+                <h3 class="title"><a href="portfolio-single.html">Tremblant In Canada</a></h3>
+              </div>
+              <div class="portfolio-info-category">
+                <h3 class="category">Graphic Design</h3>
+              </div>
+            </div>
+          </div>
+          <!--== End Portfolio Item ==-->
+        </div>
+        <div class="col">
+          <!--== Start Portfolio Item ==-->
+          <div class="portfolio-item">
+            <div class="inner-content portfolio-hover-style">
+              <div class="portfolio-thumb">
+                <a href="portfolio-single.html"><img  src="{{ url_for('static', filename='img/portfolio/02.jpg') }}" alt="Image-HasTech"></a>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-info-icon">
+                  <a class="item image-popup" data-fancybox="gallery" data-caption="The Flash Tutorial" href="{{ url_for('static', filename='img/portfolio/02.jpg') }}"><i class="lastudioicon-search-zoom-in"></i></a>
+                  <a class="item" href="portfolio-single.html"><i class="lastudioicon-web-link"></i></a>
+                </div>
+                <h3 class="title"><a href="portfolio-single.html">The Flash Tutorial</a></h3>
+              </div>
+              <div class="portfolio-info-category">
+                <h3 class="category">Digital Arts</h3>
+              </div>
+            </div>
+          </div>
+          <!--== End Portfolio Item ==-->
+        </div>
+        <div class="col">
+          <!--== Start Portfolio Item ==-->
+          <div class="portfolio-item">
+            <div class="inner-content portfolio-hover-style">
+              <div class="portfolio-thumb">
+                <a href="portfolio-single.html"><img  src="{{ url_for('static', filename='img/portfolio/03.jpg') }}" alt="Image-HasTech"></a>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-info-icon">
+                  <a class="item image-popup" data-fancybox="gallery" data-caption="Digital Arts" href="{{ url_for('static', filename='img/portfolio/03.jpg') }}"><i class="lastudioicon-search-zoom-in"></i></a>
+                  <a class="item" href="portfolio-single.html"><i class="lastudioicon-web-link"></i></a>
+                </div>
+                <h3 class="title"><a href="portfolio-single.html">Astronomy Or Astrology</a></h3>
+              </div>
+              <div class="portfolio-info-category">
+                <h3 class="category">Digital Arts</h3>
+              </div>
+            </div>
+          </div>
+          <!--== End Portfolio Item ==-->
+        </div>
+        <div class="col">
+          <!--== Start Portfolio Item ==-->
+          <div class="portfolio-item">
+            <div class="inner-content portfolio-hover-style">
+              <div class="portfolio-thumb">
+                <a href="portfolio-single.html"><img  src="{{ url_for('static', filename='img/portfolio/04.jpg') }}" alt="Image-HasTech"></a>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-info-icon">
+                  <a class="item image-popup" data-fancybox="gallery" data-caption="Are You Struggling In Life" href="{{ url_for('static', filename='img/portfolio/04.jpg') }}"><i class="lastudioicon-search-zoom-in"></i></a>
+                  <a class="item" href="portfolio-single.html"><i class="lastudioicon-web-link"></i></a>
+                </div>
+                <h3 class="title"><a href="portfolio-single.html">Are You Struggling In Life</a></h3>
+              </div>
+              <div class="portfolio-info-category">
+                <h3 class="category">Illustrations</h3>
+              </div>
+            </div>
+          </div>
+          <!--== End Portfolio Item ==-->
+        </div>
+        <div class="col">
+          <!--== Start Portfolio Item ==-->
+          <div class="portfolio-item">
+            <div class="inner-content portfolio-hover-style">
+              <div class="portfolio-thumb">
+                <a href="portfolio-single.html"><img  src="{{ url_for('static', filename='img/portfolio/05.jpg') }}" alt="Image-HasTech"></a>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-info-icon">
+                  <a class="item image-popup" data-fancybox="gallery" data-caption="Fons Hickmann" href="{{ url_for('static', filename='img/portfolio/05.jpg') }}"><i class="lastudioicon-search-zoom-in"></i></a>
+                  <a class="item" href="portfolio-single.html"><i class="lastudioicon-web-link"></i></a>
+                </div>
+                <h3 class="title"><a href="portfolio-single.html">Fons Hickmann</a></h3>
+              </div>
+              <div class="portfolio-info-category">
+                <h3 class="category">Photography</h3>
+              </div>
+            </div>
+          </div>
+          <!--== End Portfolio Item ==-->
+        </div>
+        <div class="col">
+          <!--== Start Portfolio Item ==-->
+          <div class="portfolio-item">
+            <div class="inner-content portfolio-hover-style">
+              <div class="portfolio-thumb">
+                <a href="portfolio-single.html"><img  src="{{ url_for('static', filename='img/portfolio/06.jpg') }}" alt="Image-HasTech"></a>
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-info-icon">
+                  <a class="item image-popup" data-fancybox="gallery" data-caption="Mitchell Rouse" href="{{ url_for('static', filename='img/portfolio/06.jpg') }}"><i class="lastudioicon-search-zoom-in"></i></a>
+                  <a class="item" href="portfolio-single.html"><i class="lastudioicon-web-link"></i></a>
+                </div>
+                <h3 class="title"><a href="portfolio-single.html">Mitchell Rouse</a></h3>
+              </div>
+              <div class="portfolio-info-category">
+                <h3 class="category">Photography</h3>
+              </div>
+            </div>
+          </div>
+          <!--== End Portfolio Item ==-->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--== End Portfolios Area Wrapper ==-->
+
+  <!--== Start Service Area Wrapper ==-->
+  <section class="service-area service-default-area">
+    <div class="container-fluid pt--0">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title" data-aos="fade-up" data-aos-offset="2"> 
+              <h2 class="title mb--0">What We Work</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row no-gutter">
+        <div class="col-md-6 col-lg-4">
+          <!--== Start Service Item ==-->
+          <div class="service-item" data-aos="fade-up" data-aos-offset="50">
+            <div class="inner-content">
+              <div class="icon-box">
+                <img src="{{ url_for('static', filename='img/icons/service1.svg') }}" alt="Image-HasTech">
+              </div>
+              <div class="content">
+                <h4 class="title">Creative Design</h4>
+                <p>Aenean vestibulum fringilla dolor non rhoncus. Donec ultrices condimentum risus</p>
+              </div>
+            </div>
+          </div>
+          <!--== End Service Item ==-->
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <!--== Start Service Item ==-->
+          <div class="service-item" data-aos="fade-up" data-aos-delay="60" data-aos-offset="100">
+            <div class="inner-content">
+              <div class="icon-box">
+                <img src="{{ url_for('static', filename='img/icons/service2.svg') }}" alt="Image-HasTech">
+              </div>
+              <div class="content">
+                <h4 class="title">Photography Studio</h4>
+                <p>Maecenas vel lectus sagittis ex interdum finibus ut sit amet lacus. Sed cursus lectus felis</p>
+              </div>
+            </div>
+          </div>
+          <!--== End Service Item ==-->
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <!--== Start Service Item ==-->
+          <div class="service-item" data-aos="fade-up" data-aos-delay="70" data-aos-offset="115">
+            <div class="inner-content">
+              <div class="icon-box">
+                <img src="{{ url_for('static', filename='img/icons/service3.svg') }}" alt="Image-HasTech">
+              </div>
+              <div class="content">
+                <h4 class="title">Filmmaker</h4>
+                <p>Quisque consequat pellentesque orci id congue. Aenean interdum purus id tortor elementum</p>
+              </div>
+            </div>
+          </div>
+          <!--== End Service Item ==-->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--== End Service Area Wrapper ==-->
+
+  <!--== Start Team Area Wrapper ==-->
+  <section class="team-area team-default-area">
+    <div class="container pt--0">
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="section-title">
+            <h2 class="title" data-aos="fade-up" data-aos-offset="50">Our Dream Team</h2>
+            <div class="desc mb--0" data-aos="fade-up" data-aos-delay="50" data-aos-offset="60">
+              <p>Vivamus molestie arcu enim, ac varius justo commodo ut. Suspendisse non semper augue. Donec <br>lobortis tempor risus, id aliquam neque rhoncus nec.Proin finibus tincidunt faucibus. Nulla arcu <br>magna, fermentum…</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row no-gutter">
+        <div class="col-sm-6 col-lg-4">
+          <!--== Start Team Item ==-->
+          <div class="team-item" data-aos="fade-up" data-aos-offset="60">
+            <div class="inner-content">
+              <div class="thumb">
+                <img src="{{ url_for('static', filename='img/team/1.jpg') }}" alt="Image-HasTech">
+              </div>
+            </div>
+          </div>
+          <!--== End Team Item ==-->
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <!--== Start Team Item ==-->
+          <div class="team-item" data-aos="fade-up" data-aos-offset="60">
+            <div class="inner-content">
+              <div class="thumb">
+                <img src="{{ url_for('static', filename='img/team/2.jpg') }}" alt="Image-HasTech">
+              </div>
+            </div>
+          </div>
+          <!--== End Team Item ==-->
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <!--== Start Team Item ==-->
+          <div class="team-item" data-aos="fade-up" data-aos-offset="60">
+            <div class="inner-content">
+              <div class="thumb">
+                <img src="{{ url_for('static', filename='img/team/3.jpg') }}" alt="Image-HasTech">
+              </div>
+            </div>
+          </div>
+          <!--== End Team Item ==-->
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <!--== Start Team Item ==-->
+          <div class="team-item" data-aos="fade-up" data-aos-delay="70" data-aos-offset="150">
+            <div class="inner-content">
+              <div class="thumb">
+                <img src="{{ url_for('static', filename='img/team/4.jpg') }}" alt="Image-HasTech">
+              </div>
+            </div>
+          </div>
+          <!--== End Team Item ==-->
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <!--== Start Team Item ==-->
+          <div class="team-item" data-aos="fade-up" data-aos-delay="70" data-aos-offset="150">
+            <div class="inner-content">
+              <div class="thumb">
+                <img src="{{ url_for('static', filename='img/team/5.jpg') }}" alt="Image-HasTech">
+              </div>
+            </div>
+          </div>
+          <!--== End Team Item ==-->
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <!--== Start Team Item ==-->
+          <div class="team-item" data-aos="fade-up" data-aos-delay="70" data-aos-offset="150">
+            <div class="inner-content team-view-btn-content">
+              <div class="false-thumb">
+                <img src="{{ url_for('static', filename='img/team/1.jpg') }}" alt="Image-HasTech">
+              </div>
+              <div class="btn-content">
+                <a href="team.html"><span>VIEW ALL</span></a>
+              </div>
+            </div>
+          </div>
+          <!--== End Team Item ==-->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--== End Team Area Wrapper ==-->
+
+  <!--== Start Divider Area Wrapper ==-->
+  <section class="divider-area bg-img parallax" data-aos="fade-up" data-aos-offset="50" data-speed="1.2" data-bg-img="{{ url_for('static', filename='img/photos/bg1.jpg') }}">
+    <div class="container pt--0 pb--0">
+      <div class="row">
+        <div class="col-12">
+          <div class="divider-style-wrap">
+            <div class="divider-content">
+              <h4 class="sub-title" data-aos="fade-up" data-aos-offset="110">Watch Our Story</h4>
+              <h3 class="title" data-aos="fade-up" data-aos-delay="70" data-aos-offset="160">Film Studio Based in Paris</h3>
+              <div class="play-video-btn" data-aos="fade-up" data-aos-delay="100" data-aos-offset="190">
+                <a href="https://www.youtube.com/embed/Z8HjuA6aOtM?playlist=Z8HjuA6aOtM&loop=1" class="video-popup svg-icon-style">
+                  <div class="svg-icon icon m-auto" id="play-video-svg-1" data-svg-icon="assets/img/icons/play1.svg"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--== End Divider Area Wrapper ==-->
+
+  <!--== Start Testimonial Area Wrapper ==-->
+  <section class="testimonial-area">
+    <div class="container max-1170">
+      <div class="row">
+        <div class="col-12">
+          <div class="testimonial-style-wrap">
+            <div class="swiper-container testi-slider-container">
+              <div class="testi-icon-box svg-icon-style" data-aos="fade-up" data-aos-delay="70" data-aos-offset="110">
+                <div class="svg-icon icon" id="testi-icon-svg-1" data-svg-icon="{{ url_for('static', filename='img/icons/testi-icon.svg') }}"></div>
+              </div>
+              <div class="swiper-wrapper" data-aos="fade-up" data-aos-delay="120" data-aos-offset="180">
+                <div class="swiper-slide">
+                  <!--== Start Testimonial Item ==-->
+                  <div class="testimonial-item">
+                    <div class="testi-inner-content">
+                      <div class="testi-content">
+                        <p>This theme has great customizability, features, no bugs that I have encountered and the support from LA-Studio is superb to say the least. Great job.</p>
+                      </div>
+                      <div class="testi-author">
+                        <div class="testi-info">
+                          <span class="designation">Joshua George • CEO Apple</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--== End Testimonial Item ==-->
+                </div>
+                <div class="swiper-slide">
+                  <!--== Start Testimonial Item ==-->
+                  <div class="testimonial-item">
+                    <div class="testi-inner-content">
+                      <div class="testi-content">
+                        <p>This theme has great customizability, features, no bugs that I have encountered and the support from LA-Studio is superb to say the least. Great job.</p>
+                      </div>
+                      <div class="testi-author">
+                        <div class="testi-info">
+                          <span class="designation">Joshua George • CEO Apple</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--== End Testimonial Item ==-->
+                </div>
+                <div class="swiper-slide">
+                  <!--== Start Testimonial Item ==-->
+                  <div class="testimonial-item">
+                    <div class="testi-inner-content">
+                      <div class="testi-content">
+                        <p>This theme has great customizability, features, no bugs that I have encountered and the support from LA-Studio is superb to say the least. Great job.</p>
+                      </div>
+                      <div class="testi-author">
+                        <div class="testi-info">
+                          <span class="designation">Joshua George • CEO Apple</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--== End Testimonial Item ==-->
+                </div>
+              </div>
+
+              <!--== Add Swiper Pagination ==-->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--== End Testimonial Area Wrapper ==-->
+
+  <!--== Start Blog Area Wrapper ==-->
+  <section class="blog-area">
+    <div class="container-fluid p--0">
+      <div class="row post-items-style1">
+        <div class="col-12">
+          <!--== Start Blog Item ==-->
+          <div class="post-item" data-aos="fade-up">
+            <div class="inner-content">
+              <div class="thumb">
+                <a href="blog-single.html"><img src="{{ url_for('static', filename='img/blog/1.jpg') }}" alt="Image-HasTech"></a>
+              </div>
+              <div class="content">
+                <ul class="meta-tag">
+                  <li><a href="blog.html">Beauty</a>,</li>
+                  <li><a href="blog.html">Business</a></li>
+                </ul>
+                <h4 class="title"><a href="blog-single.html">Telescopes 101</a></h4>
+                <ul class="meta-date">
+                  <li>October 27, 2021</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--== End Blog Item ==-->
+        </div>
+        <div class="col-12">
+          <!--== Start Blog Item ==-->
+          <div class="post-item" data-aos="fade-up">
+            <div class="inner-content">
+              <div class="thumb">
+                <a href="blog-single.html"><img src="{{ url_for('static', filename='img/blog/2.jpg') }}" alt="Image-HasTech"></a>
+              </div>
+              <div class="content">
+                <ul class="meta-tag">
+                  <li><a href="blog.html">Beauty</a>,</li>
+                  <li><a href="blog.html">Business</a></li>
+                </ul>
+                <h4 class="title"><a href="blog-single.html">The Flash Tutorial</a></h4>
+                <ul class="meta-date">
+                  <li>October 27, 2021</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--== End Blog Item ==-->
+        </div>
+        <div class="col-12">
+          <!--== Start Blog Item ==-->
+          <div class="post-item" data-aos="fade-up">
+            <div class="inner-content">
+              <div class="thumb">
+                <a href="blog-single.html"><img src="{{ url_for('static', filename='img/blog/3.jpg') }}" alt="Image-HasTech"></a>
+              </div>
+              <div class="content">
+                <ul class="meta-tag">
+                  <li><a href="blog.html">Beauty</a>,</li>
+                  <li><a href="blog.html">Business</a></li>
+                </ul>
+                <h4 class="title"><a href="blog-single.html">Astronomy Or Astrology</a></h4>
+                <ul class="meta-date">
+                  <li>October 27, 2021</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--== End Blog Item ==-->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--== End Blog Area Wrapper ==-->
+
+  <!--== Start Brand Logo Area Wrapper ==-->
+  <section class="brand-logo-area">
+    <div class="container">
+      <div class="brand-logo-content">
+        <div class="row">
+          <div class="col-12">
+            <div class="swiper-container brand-logo-slider-container" data-aos="fade-up">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <!--== Start Brand Logo Item ==-->
+                  <div class="brand-logo-item">
+                    <img src="{{ url_for('static', filename='img/brand-logo/1.png') }}" alt="Image-HasTech">
+                  </div>
+                  <!--== End Brand Logo Item ==-->
+                </div>
+                <div class="swiper-slide">
+                  <!--== Start Brand Logo Item ==-->
+                  <div class="brand-logo-item">
+                    <img src="{{ url_for('static', filename='img/brand-logo/2.png') }}" alt="Image-HasTech">
+                  </div>
+                  <!--== End Brand Logo Item ==-->
+                </div>
+                <div class="swiper-slide">
+                  <!--== Start Brand Logo Item ==-->
+                  <div class="brand-logo-item">
+                    <img src="{{ url_for('static', filename='img/brand-logo/3.png') }}" alt="Image-HasTech">
+                  </div>
+                  <!--== End Brand Logo Item ==-->
+                </div>
+                <div class="swiper-slide">
+                  <!--== Start Brand Logo Item ==-->
+                  <div class="brand-logo-item">
+                    <img src="{{ url_for('static', filename='img/brand-logo/4.png') }}" alt="Image-HasTech">
+                  </div>
+                  <!--== End Brand Logo Item ==-->
+                </div>
+                <div class="swiper-slide">
+                  <!--== Start Brand Logo Item ==-->
+                  <div class="brand-logo-item">
+                    <img src="{{ url_for('static', filename='img/brand-logo/5.png') }}" alt="Image-HasTech">
+                  </div>
+                  <!--== End Brand Logo Item ==-->
+                </div>
+                <div class="swiper-slide">
+                  <!--== Start Brand Logo Item ==-->
+                  <div class="brand-logo-item">
+                    <img src="{{ url_for('static', filename='img/brand-logo/6.png') }}" alt="Image-HasTech">
+                  </div>
+                  <!--== End Brand Logo Item ==-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--== End Brand Logo Area Wrapper ==-->
+</main>
+{% endblock %}

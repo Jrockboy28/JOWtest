@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfolio FullWidth – Optica - Creative Photography Studio HTML Template</title>
+
+    <link href="{{ url_for('static', filename='img/favicon.ico') }}" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,600,700,800,900" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/headroom.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/animate.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/lastudioIcons-icons.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/dlicon.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/swiper.min.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/fancybox.min.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/slicknav.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/aos.min.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G39S1DVK4Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-G39S1DVK4Z');
+    </script>
+
+</head>
+
+<body>
+
+<!--wrapper start-->
+<div class="wrapper portfolio-full-width-page-wrapper">
+
+  <!--== Start Preloader Content ==-->
+  <div class="preloader-wrap">
+    <div class="preloader">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!--== End Preloader Content ==-->
+
+  <!--== Start Header Wrapper ==-->
+  <header class="header-area header-default">
+    <div class="container-fluid">
+      <div class="row no-gutter align-items-center position-relative">
+        <div class="col">
+          <div class="header-action off-canvas-wrapper-btn-style2">
+            <button class="btn-menu btn-menu-dark" type="button"><i class="lastudioicon-menu-4-1"></i></button>
+          </div>
+          <div class="header-logo-area">
+            <a href="index.html">
+              <img class="logo-main" src="{{ url_for('static', filename='img/logo-light.png') }}" alt="Logo" />  
+              <img class="logo" src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" />
+            </a>
+          </div>
+          <div class="aside-menu-wrap-btn">
+            <button class="btn-aside-menu"><i class="lastudioicon-dot-3"></i></button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="header-navigation-area">
+
+            <ul class="main-menu nav">
+              <li><a href="index.html"><span>Home</span></a></li>
+              <li><a href="portfolio.html"><span>Activities</span></a></li>
+              <li><a href="contact.html"><span>Contact</span></a></li>
+            </ul>
+            
+          </div>
+        </div>
+        <div class="col">
+          <div class="header-action-area">
+            <div class="info-box">
+              <button class="btn-search-menu"><i class="lastudioicon-zoom-1"></i></button>
+              <button class="btn-cart-menu aside-login-form-register-open"><i class="lastudioicon-user-2"></i></button>
+              <button class="btn-wishlist-menu aside-login-form-open"><i class="lastudioicon-user-1"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--== End Header Wrapper ==-->
+  
+  {% block body %}
+  {% endblock %}
+  
+  {% include "./layer1/layer2/tail_layout.html" %}
+
+</body>
+
+</html>
